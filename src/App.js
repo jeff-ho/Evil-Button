@@ -2,7 +2,7 @@ import './App.css';
 import React, { useState } from 'react';
 
 function App() {
-  const [coord, setCoord] = useState({top:300,left:550})
+  const [coord, setCoord] = useState({top:450,left:800})
 
   const randomHeight = () => {
     return Math.floor(Math.random() * 500)

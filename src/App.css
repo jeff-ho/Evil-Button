@@ -8,7 +8,7 @@
 }
 
 button {
-  padding: 1.5em 3em;
+  padding: 1.5em 5em;
   background: #efefef;
   border-radius: 10px!important;
   border: none;
@@ -20,6 +20,7 @@ button {
   outline: none;
   cursor: pointer;
   position: absolute;
+  
   
   transition: .2s ease-in-out;
   box-shadow: -6px -6px 14px rgba(255, 255, 255, .7),
