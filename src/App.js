@@ -1,23 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useState } from 'react';
 
 function App() {
+  const [coord, setCoord] = useState({top:300,left:550})
+
+  const randomHeight = () => {
+    return Math.floor(Math.random() * 500)
+  }
+
+  const randomWidth = () => {
+    return Math.floor(Math.random() * 1000)
+  }
+  
+  const moveButton = () => {
+      setCoord({...coord, top:randomHeight(), left:randomWidth() })
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <button
+      style={{top: coord.top, left: coord.left}}
+      onMouseEnter={() => moveButton()}
+      >Click Me If You Can
+      </button>
     </div>
   );
 }
