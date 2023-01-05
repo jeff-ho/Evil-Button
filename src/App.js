@@ -21,7 +21,7 @@ function App() {
       <button
       style={{top: coord.top, left: coord.left}}
       onMouseEnter={() => moveButton()}
-      >Click Me If You Can
+      >Click Me 
       </button>
     </div>
   );
