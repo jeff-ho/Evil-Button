@@ -1,6 +1,5 @@
 .App {
   height: 100vh;
-  /* background-color: rgb(238, 221, 197); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,7 +7,7 @@
 }
 
 button {
-  padding: 1.5em 5em;
+  padding: 1.5em 4em;
   background: #efefef;
   border-radius: 10px!important;
   border: none;
